@@ -12,7 +12,7 @@ RUN echo "%sudo ALL=(ALL) ALL" >> /etc/sudoers
 # out with the `id`  programm. This way the file ownership in mapped directories is
 # consistent with the host system.
 RUN groupadd --gid 1000 leon
-RUN useradd --uid 1000  \
+RUN useradd --uid 1000  --gid leon \
     --home-dir /home/leon --shell /usr/bin/zsh  \
     --groups sudo,leon \
     --password leon \
