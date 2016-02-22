@@ -7,4 +7,4 @@ docker run -ti \
     --device /dev/nvidia-uvm:/dev/nvidia-uvm \
     -v /home:/home -v /mnt:/mnt \
     --publish 9997:9997 \
-    --name leon_gan_container leon/gan  /bin/zsh
+    --name leon_arch leon/gan /bin/zsh
